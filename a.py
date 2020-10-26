@@ -24,7 +24,7 @@ if a=='show database':
         st.text("showing complete database")
         data_complete
 
-    elif st.checkbox('show hwad of database'):
+    elif st.checkbox('show head of database'):
         st.text("showing head of database")
         data_head
 
@@ -48,6 +48,10 @@ elif a=='show visualization':
 
 
 elif a=='use ML module':
+    progress=st.progress(0)
+    for i in range(100):
+        time.sleep(0.0000001)
+        progress.progress(i+1)
     oxygen1=st.number_input('oxygen')
     temp1=st.number_input('temrature')
     humidity1=st.number_input('humdity')
@@ -60,6 +64,7 @@ elif a=='use ML module':
             st.warning('forrest in danger')
         else:
             st.success('forrest in safe')
+    st.ballons()
     r=st.radio('view data',['input','outout'])
     if r=='input':
         x
@@ -74,4 +79,5 @@ elif a=='use ML module':
         st.spinner('in process')
 
 elif a=='make module powerfull':
-    st.spinner('midmsadlkasmaslkmclaskmck')
+    st.ballons()
+    st.text('we are designing it please wait...')
