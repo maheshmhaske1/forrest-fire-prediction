@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-impoet time
 import numpy as np
 from sklearn.linear_model import LinearRegression
 import warnings
@@ -49,10 +48,6 @@ elif a=='show visualization':
 
 
 elif a=='use ML module':
-    progress=st.progress(0)
-    for i in range(100):
-        time.sleep(0.0000001)
-        progress.progress(i+1)
     oxygen1=st.number_input('oxygen')
     temp1=st.number_input('temrature')
     humidity1=st.number_input('humdity')
@@ -65,7 +60,6 @@ elif a=='use ML module':
             st.warning('forrest in danger')
         else:
             st.success('forrest in safe')
-    st.ballons()
     r=st.radio('view data',['input','outout'])
     if r=='input':
         x
@@ -80,5 +74,4 @@ elif a=='use ML module':
         st.spinner('in process')
 
 elif a=='make module powerfull':
-    st.ballons()
     st.text('we are designing it please wait...')
