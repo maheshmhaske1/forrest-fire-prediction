@@ -35,7 +35,7 @@ if a=='show database':
 
 
 elif a=='show visualization':
-    if st.checkbox("1"):
+    if st.checkbox("graph"):
         st.line_chart(data_complete)
 
     elif st.checkbox('2'):
