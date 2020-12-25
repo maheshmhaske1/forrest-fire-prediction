@@ -36,7 +36,7 @@ if a=='show database':
 
 elif a=='show visualization':
     if st.checkbox("1"):
-        st.image('a.png')
+        st.line_chart(data_complete)
 
     elif st.checkbox('2'):
         st.image('bb.png')
